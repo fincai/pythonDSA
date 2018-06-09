@@ -32,6 +32,6 @@ def sierpinski(points, degree, myTurtle):
 
 myTurtle = turtle.Turtle()
 myWindow = turtle.Screen()
-myPoints = [(-200, -100), (0, 200), (200, -100)]
+myPoints = [(-400, -200), (0, 400), (400, -200)]
 sierpinski(myPoints, 5, myTurtle)
 myWindow.exitonclick()
