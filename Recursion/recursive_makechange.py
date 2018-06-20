@@ -1,5 +1,8 @@
 # optimal number of coins to make change
+count = 0 
 def recursiveMC(coinValueList, change):
+    global count
+    count += 1
     if change in coinValueList:
         return 1
     minCoins = change
@@ -10,5 +13,6 @@ def recursiveMC(coinValueList, change):
     return minCoins
 
 print(recursiveMC([1, 5, 10, 25], 63))
+print("%d recursive calls." % count)
         
 
